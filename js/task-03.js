@@ -20,3 +20,6 @@ const image = images.map((imgs) =>
   `<li><img class = 'img' width = "300px" src = ${imgs.url} alt= ${imgs.alt} ></li>` ).join('');
 listEl.insertAdjacentHTML('beforeend', image);
 
+listEl.style.display = "flex";
+listEl.style.gap = "10px";
+listEl.style.listStyle = "none";
